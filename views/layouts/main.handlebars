@@ -1,0 +1,86 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="shortcut icon" type="image/x-icon" href="../Images/AWSLogo.jpg" />
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link href="/css/style.css" rel="stylesheet">
+    <link href="/css/New bootstrap/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/New bootstrap/1-col-portfolio.css" rel="stylesheet">
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+    <title>Animal Welfare Society </title>
+</head>
+
+<body onload="initialize()">
+<div class="wrapper"></div>
+    <ul class="topnav navbar -responsive" id="myTopnav" >
+
+      {{#unless user}}
+      {{#unless admin}}
+      <li><a href="/">Home</a></li>
+      <li><a href="/aboutUs">About Us</a></li>
+      <li><a href="/news">News</a></li>
+      <!-- <li><a href="/events">Comments</a></li> -->
+      <li><a href="/Comments">Comments</a></li>
+      <li><a href="/adoptions">Adoptions</a></li>
+      <li><a href="/lostAndFound">Lost & Found</a></li>
+      <li><a href="/GivenGain">Donations & GivenGain</a></li>
+      <li><a href="/inspectors">Inspectors</a></li>
+      <li><a href="/directions">Get Directions</a></li>
+      <li><a href="/contactUs">Contact Us</a></li>
+      <li><a href="/login">Login</a></li>
+      {{/unless}}
+      {{/unless}}
+
+      {{#if admin}}
+      <li><a href="/">Home</a></li>
+      <!-- <li><a href="/aboutUs">About Us</a></li> -->
+      <li><a href="/news">News </a></li>
+      <li><a href="/Comments">Comments</a></li>
+      <li><a href="/adoptions">Adoptions</a></li>
+      <li><a href="/lostAndFound">Lost & Found</a></li>
+      <li><a href="/GivenGain">Donations & GivenGain</a></li>
+      <li><a href="/inspectors">Inspectors</a></li>
+      <li><a href="/directions">Get Directions</a></li>
+      <li><a href="/allAnimals">All Animals</a></li>
+      <li><a href="/contactUs">Contact Us</a></li>
+      <li><a href="/logout">Logout</a></li>
+
+      {{/if}}
+  <li class="icon">
+    <a href="javascript:void(0);" style="font-size:15px;" onclick="myFunction()">☰</a>
+  </li>
+</ul>
+
+
+<script>
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+</script>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script href="js/bootstrap.min.js"></script>
+<hr>
+
+
+{{{body}}}
+
+</body>
+
+</html>

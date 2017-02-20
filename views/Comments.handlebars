@@ -1,0 +1,40 @@
+<div class="container">
+
+<div class="container-fluid">
+    <h1 class="page-header">Comments</h1>
+    <a href="/addComment" class="btn btn-primary "><b>Add Comment</b></a>
+    <div class="img-responsive">
+
+
+        {{#data}}
+<div id="postContainer">
+
+  <form action='/Comments/remove/{{id}}' method='POST'>
+
+      <h3>
+        {{title}}
+      </h3>
+        <p>Description: {{description}}</p>
+        <p>Posted on: {{date}}</p>
+        <p> Posted by: {{name}}</p>
+        <!-- <button class="btn btn-primary" type='submit'>REMOVE</button> -->
+        <hr>
+    </form>
+
+    <!-- <form >
+
+      <hr>
+        <h3>
+          {{title}}
+        </h3>
+          <p>Description: {{description}}</p>
+          <p>Posted on: {{date}}</p>
+          <p> Posted by: {{name}}</p>
+
+           <button class="btn btn-primary" type='submit'>REMOVE</button>
+      </form> -->
+</div>
+    {{/data}}
+  </div>
+ </div>
+</div>

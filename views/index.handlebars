@@ -1,0 +1,133 @@
+
+    <div class="container">
+
+  <div class="page-header" style="height:50px;text-align: center;">
+    <h3>ANIMAL WELFARE SOCIETY OF SOUTH AFRICA</h3>
+  </div>
+<!-- style="max-width:800px;position:relative" -->
+<!-- <div class="sliderContainer img-responsive"> -->
+
+<div class="sliderDiv img-responsive" >
+
+    <img class="sliderimg img-responsive" src="/Images/Slider/Cat_Easy-Resize.com.jpg" style="height:300px;width:850px;" >
+ <img class="sliderimg img-responsive" src="/Images/Slider/doginBlanket_Easy-Resize.com.jpg"  style="height:300px;width:850px;" >
+
+
+  </div>
+
+ <!-- </div> -->
+
+<script>
+    var slideIndex = 0;
+    carousel();
+
+    function carousel() {
+        var i;
+        var x = document.getElementsByClassName("sliderimg");
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > x.length) {
+            slideIndex = 1
+        }
+        x[slideIndex - 1].style.display = "block";
+        setTimeout(carousel, 3000); // Change image every 3 seconds
+    }
+</script>
+
+<script>
+    var slideIndex = 1;
+    showDivs(slideIndex);
+
+    function plusDivs(n) {
+        showDivs(slideIndex += n);
+    }
+
+    function showDivs(n) {
+        var i;
+        var x = document.getElementsByClassName("sliderimg");
+        if (n > x.length) {
+            slideIndex = 1
+        }
+        if (n < 1) {
+            slideIndex = x.length
+        };
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+        x[slideIndex - 1].style.display = "block";
+    }
+</script>
+
+<hr>
+
+<div class="row">
+  <div class="col-md-12">
+  <div class="col-md-2"></div>
+    <div class="col-md-7">
+
+        <p><h4>The Animal Welfare Society of South Africa offers a full range of veterinary services to the underprivileged and disadvantaged communities of Cape Town.
+      From its base in Philippi, the Society handles about 4,000 animals per month. The Clinic is open 7 days a week to accommodate those that are unable to bring their pets during the week.
+      We have a fully equipped and very busy theatres where we do sterilizations, Orthopaedic and other operations. At any one time we can house over a hundred sick or injured animals.
+      We are committed to sterilizing every animal that comes through our hospital as our contribution to reducing the number of strays and unwanted animals in Cape Town</h4></p>
+
+    </div>
+    <div class="col-md-2"></div>
+  </div>
+
+    <div class="col-md-12">
+    <div class="col-md-1"></div>
+
+
+    <div class="col-md-6 ">
+      <h3>Contact us:</h3>
+      <h5>
+      <p>If you would like to contact us via phonecall, please visit the <a href="contactUs">Contact Us</a> page and find our number there.</p>
+      <p>If you would like to send us and email for an annonymous tip off, please fill out the email form on the <a href="/inspectors">Inspectors page</a></p>
+    </h5>
+  </div>
+
+  <div class="col-md-5 ">
+    <h3>Our Banking Details</h3>
+
+    <p><h5>
+      <li>Standard Bank, Kromboom</li>
+      <li>Branch Code 026209</li>
+      <li>A/C Animal Welfare Society of SA</li>
+      <li>No. 07 286 319 6</li>
+      <li>Reference: Your surname plus Membership/Donation</li>
+      <li>For Section 18A Tax Certificate, please email us at Admin@awscape.org.za</li></h5>
+
+    </p>
+  </div>
+  <div class="col-md-1"></div>
+</div>
+
+    <!-- <div class="col-md-10">
+
+
+                <div class="column text-center">
+                    <i class="fi-social-facebook"></i>
+                    <p><b>Please be kind enough to share our Facebook page</b></p>
+                    <iframe src="https://www.facebook.com/plugins/share_button.php?href=https%3A%2F%2Fwww.facebook.com%2Fawsphilippi%2F&layout=button&mobile_iframe=true&width=59&height=20&appId" width="59" height="20" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
+                        allowTransparency="true"></iframe>
+
+                    <br>
+                </div>
+
+            <br>
+    </div> -->
+
+
+
+    <div>
+      <div class="col-md-7 pull-right">
+        <p>Created By:</p>
+        <p><a href="https://github.com/SomeRandomCoder">Tyron Burkhardt</a><br> & <br><a href="https://github.com/danger12001">Paul Robertson</a></p>
+
+      </div>
+    </div>
+
+
+</div>

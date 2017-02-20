@@ -1,0 +1,44 @@
+   <form action ="/users/search/" method="POST">
+     <input type="text" id="searchBar" name="searchVal" placeholder="Search.." >
+    <!-- <button> <input type="submit" value="submit"></button> -->
+
+   </form>
+
+  <div class="row-list">
+  <div class="large-4 columns">Users</div>
+  <div class="large-2 columns">Admin</div>
+  <div class="large-2 columns">Locked</div>
+  <div class="large-4 columns">Edit/Delete</div>
+
+</div>
+        {{#users}}
+
+          <li class="large-4 columns db-List"> {{username}}</li>
+          <li class="large-2 columns db-List">{{admin}}</li>
+          <li class="large-2 columns db-List">{{locked}}</li>
+
+          <a href="/users/editUsers/{{id}}" class="btn btn-primary large-2 columns ">Edit</a>
+          <a href="/users/delete/{{id}}" class="btn btn-primary large-2 columns ">Delete</a>
+        {{/users}}
+    </ul>
+
+    <script>
+    $(document).ready(function() {
+      $('#searchBar').keyup(function(){
+        var searchVal= $("#searchBar").val();
+        $.get("/users/search/" + searchVal, function(results){
+          console.log(searchVal);
+          $("#usersSearch").html(results)
+        });
+
+      })
+
+    })
+    </script>
+
+<style>
+  .columns{
+    height: 55px;
+    border: 1px solid #466d98;
+  }
+</style>

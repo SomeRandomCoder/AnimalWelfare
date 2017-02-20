@@ -1,0 +1,151 @@
+.wrapper {
+  background-image: url(../Images/NavBarImage.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  width: 100%;
+  height: 100px;
+
+}
+
+
+.row-list{
+  width:85%;
+
+  /*border: 2px double black;*/
+  display: inline-block;
+  list-style-type: none;
+  padding-left:25%;
+}
+
+.row-list li{
+
+  background-color: white;
+  border: 2px double black;
+
+
+
+}
+#postContainer{
+  width:100%;
+  height:20%;
+}
+.post{
+  height:30%;
+background-color: wgite;
+padding: 5px;
+border: 1px solid #cccccc;
+border-radius: 10px;
+margin-bottom: 5px;
+}
+
+.container{
+  background-color: white;
+  border-radius: 10px;
+}
+
+#BankDetails ul li {
+  text-decoration: none;
+  list-style:none;
+}
+
+body{
+  /*background-color: aqua;*/
+  background: linear-gradient(to right, #66b3ff, #80bfff);
+}
+
+body{margin:0;}
+ul.topnav {
+  list-style-type: none;
+  margin: 0;
+  padding-left: 15%;
+  padding-right: 15%;
+/*padding: 0;*/
+  overflow: hidden;
+  background-color: #3333ff;
+}
+
+ul.topnav li {float: left;
+text-align: center;
+}
+
+ul.topnav li a {
+  display: inline-block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+ul.topnav li a:hover {background-color: #555;}
+
+ul.topnav li.icon {display: none;}
+
+@media screen and (max-width:680px) {
+  ul.topnav li:not(:first-child) {display: none;}
+  ul.topnav li.icon {
+    float: right;
+    display: inline-block;
+  }
+}
+
+@media screen and (max-width:680px) {
+  ul.topnav.responsive {position: relative;}
+  ul.topnav.responsive li.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  ul.topnav.responsive li {
+    float: none;
+    display: inline;
+  }
+  ul.topnav.responsive li a {
+    display: block;
+    text-align: center;
+  }
+}
+
+.slideShowDiv{
+  height: 200px;
+  width: 400px;
+  padding-left: 20%;
+  padding-right: 20%;
+}
+
+.img{
+  width: 100%;
+  height:300px;
+  padding-bottom: 10px;
+}
+.row{
+  display: inline-block;
+}
+
+.sliderContainer{
+  width:1150px;
+  height: 500px;
+  border-style: solid;
+  border-color: black;
+  border-width: 2px;
+}
+
+.sliderDiv{
+  width:850px;
+  height: 300px;
+  margin: 0 auto;
+
+}
+.sliderDiv img{
+  border-radius: 20px;
+}
+
+.sliderimg{
+  border-radius: 10px;
+}
+
+.page-header{
+  height:50px;
+  text-align: center;
+}

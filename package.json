@@ -1,0 +1,40 @@
+{
+  "name": "animal-welfare-website-v2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "dependencies": {
+    "bcrypt": "^0.8.7",
+    "bcryptjs": "^2.3.0",
+    "body-parser": "^1.15.2",
+    "express": "^4.13.4",
+    "express-flash": "^0.0.2",
+    "express-handlebars": "^3.0.0",
+    "express-myconnection": "^1.0.4",
+    "express-session": "^1.14.0",
+    "flash": "^1.1.0",
+    "handlebars": "^4.0.5",
+    "multer": "^1.2.0",
+    "mysql": "^2.11.1",
+    "nodemailer": "^2.6.0",
+    "nodemon": "^1.9.2",
+    "bootstrap": "^3.3.7",
+    "browser-sync": "^2.13.0",
+    "co": "~4.6.0",
+    "font-awesome": "^4.6.3"	
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SomeRandomCoder/Animal-Welfare-Website-V2.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SomeRandomCoder/Animal-Welfare-Website-V2/issues"
+  },
+  "homepage": "https://github.com/SomeRandomCoder/Animal-Welfare-Website-V2#readme"
+}
