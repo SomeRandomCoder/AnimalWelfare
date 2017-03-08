@@ -47,8 +47,8 @@ exports.search = function(req, res, next){
      var searchVal =  req.params.searchVal;
     console.log("Radio button value: " +searchVal + " from searchQuery Function");
     console.log("---------------------------------------------------");
-    connection.query('SELECT * FROM adoptions WHERE animal="cat" and adoptions.size LIKE ?', [searchVal], function(err, result){
-      if(err) return console.log(err);
+    connection.query('SELECT * FROM adoptions WHERE animal="cat" AND adoptions.size LIKE ?', [searchVal], function(err, result){
+      if(err) return err;
 		  res.render('adoptCatSearch',{
             data : result,
         		admin: req.session.admin,

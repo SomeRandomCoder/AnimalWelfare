@@ -140,7 +140,7 @@ app.get("/adoptions/add", function(req, res) {
 
 app.post('/adoptions/add',multer({ dest: './public/uploads/'}).single('img') ,adoptions.add);
 app.get("/adoptCat", adoptions.showCat);
-app.get("/adoptCat/search/searchVal", adoptions.search);
+app.get("/adoptCat/search/:searchVal", adoptions.search);
 app.post("/adoptCat/search/", adoptions.search);
 app.get("/adoptDog", adoptions.showDog);
 app.get("/allAnimals", adoptions.showAll);

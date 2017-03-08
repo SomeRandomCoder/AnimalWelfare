@@ -17,6 +17,7 @@
 
 	  </form>
 
+		<div id='adoptCatSearch'>
     <div class='row'>
         {{#data}}
 	        <div class="col-md-4" >
@@ -28,6 +29,11 @@
 	        </div>
         {{/data}}
     </div>
+
+
+
+
+		</div>
 
           <hr>
           <div>
@@ -45,6 +51,8 @@
 	 		$('#myForm input').on('change', function() {
 				var searchVal = $('input[name=size]:checked', '#myForm').val();
 			$.get("/adoptCat/search/" + searchVal, function(results){
+				console.log(results);
+
 			  $("#adoptCatSearch").html(results)
 
 		 });
